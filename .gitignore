@@ -1,0 +1,15 @@
+.env
+src/billing-pdf-pipeline-firebase-adminsdk-bw9wm-157e0c2911.json
+src/billing-testing-354307-eda56abda0bd.json
+venv/
+src/APISetupFBS/__pycache__/*.pyc
+src/APISetupSheets/__pycache__/*.pyc
+src/APIUtil/__pycache__/*.pyc
+src/DataTransformTools/__pycache__/__init__.cpython-37.pyc
+src/DataTransformTools/__pycache__/MonthDataModel.cpython-37.pyc
+src/DataTransformTools/__pycache__/TimestampTool.cpython-37.pyc
+src/DataTransformTools/__pycache__/TransformationUtils.cpython-37.pyc
+src/FBClient/__pycache__/__init__.cpython-37.pyc
+src/FBClient/__pycache__/StoreInterface.cpython-37.pyc
+src/LinkUtil/__pycache__/__init__.cpython-37.pyc
+src/LinkUtil/__pycache__/GoogleSheetLink.cpython-37.pyc
