@@ -17,7 +17,6 @@ def CreateUpdateObject(employeeTimeSheetList, month, companyName, serviceprovide
 
 def PopulateMasterObject(timeSheetID, month, company, masterobj, serviceproviders):
     Payload = CaptureEmployeeTimeSheetData(timeSheetID, month, serviceproviders)
-    print(Payload)
     for i in range(0, len(Payload)):
         FillRecords(Payload[i], i, company, masterobj)
         
