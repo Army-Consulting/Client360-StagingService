@@ -9,9 +9,18 @@ class SheetsCredentialConnectorService:
         self.configfile = configFile
 
     def credentialSetUp(self):
-        billing_project_credential_json = open(self.configfile)
+        try:
+            billing_project_credential_json = open(self.configfile)
+        except IOError:
+            return "IO-ERROR"
+        except:
+            return "OTHER ERROR"
         billing_project_account = json.load(billing_project_credential_json)
-        credentials = service_account.Credentials.from_service_account_info(billing_project_account)
+        try:
+            credentials = service_account.Credentials.from_service_account_info(billing_project_account)
+        except ValueError:
+            return "Value Error"
+
         scoped_credentials = credentials.with_scopes(['https://www.googleapis.com/auth/spreadsheets'])
         return scoped_credentials
 
