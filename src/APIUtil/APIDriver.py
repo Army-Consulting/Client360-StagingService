@@ -11,12 +11,22 @@ class APIConfig:
     def activateSheets(self, sheetConfig):
         SCCS = SheetsCredentialConnectorService(sheetConfig)
         SCCC = SheetsCredentialConnectorConsumer(SCCS)
-        self.SheetService = SCCC.activate()
+        try:
+            self.SheetService = SCCC.activate()
+        except IOError:
+            raise IOError
+        except ValueError:
+            raise ValueError
     
     def activateFirebase(self, firebaseConfig):
         FCCS = FirebaseCredentialConnectorService(firebaseConfig)
         FCCC = FirebaseCredentialConnectorConsumer(FCCS)
-        self.FirebaseStore = FCCC.activate()
+        try:
+            self.FirebaseStore = FCCC.activate()
+        except IOError:
+            raise IOError
+        except ValueError:
+            raise ValueError
     
     def getSheetService(self):
         return self.SheetService
