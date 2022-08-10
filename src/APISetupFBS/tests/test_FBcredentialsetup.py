@@ -13,3 +13,9 @@ def test_FirebaseCredentialConsumer_IncorrectFrmt():
     FCCC = FirebaseCredentialConnectorConsumer(FCCS)
     with pytest.raises(ValueError) as e_info:
         FCCC.activate()
+
+def test_FirebaseCredentialConsumer_IncorrectCredentials():
+    FCCS = FirebaseCredentialConnectorService("../mocks/mock_fbs_credential_wrong_val.json")
+    FCCC = FirebaseCredentialConnectorConsumer(FCCS)
+    with pytest.raises(ValueError) as e_info:
+        FCCC.activate()
