@@ -1,6 +1,6 @@
 from APIUtil.APIDriver import APISetup
 from FBClient.StoreInterface import FirebaseRequest
-from LinkUtil.GoogleSheetLink import Link, SheetLinkFacade
+from LinkUtil.GoogleSheetLink import SheetLinkFacade
 from datetime import date
 from dotenv import load_dotenv
 import os
