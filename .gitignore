@@ -16,6 +16,3 @@ src/LinkUtil/__pycache__/GoogleSheetLink.cpython-37.pyc
 src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-5.2.1.pyc
 src/APISetupSheets/tests/__pycache__/__init__.cpython-37.pyc
 src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-7.1.2.pyc
-.gitignore
-src/APIs/billing-pdf-pipeline-firebase-adminsdk-bw9wm-157e0c2911.json
-src/APIs/billing-testing-354307-eda56abda0bd.json
