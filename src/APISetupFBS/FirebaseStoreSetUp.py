@@ -29,6 +29,6 @@ class FirebaseCredentialConnectorConsumer:
                 firebase_admin.initialize_app(credentials)
                 store = firestore.client()
                 return store
-            except FirebaseError as error:
-                return None
+            except ValueError:
+                raise ValueError
 
