@@ -15,3 +15,4 @@ src/LinkUtil/__pycache__/__init__.cpython-37.pyc
 src/LinkUtil/__pycache__/GoogleSheetLink.cpython-37.pyc
 src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-5.2.1.pyc
 src/APISetupSheets/tests/__pycache__/__init__.cpython-37.pyc
+src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-7.1.2.pyc
