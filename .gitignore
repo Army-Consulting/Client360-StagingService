@@ -18,3 +18,8 @@ src/APISetupSheets/tests/__pycache__/__init__.cpython-37.pyc
 src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-7.1.2.pyc
 src/APISetupFBS/tests/__pycache__/__init__.cpython-37.pyc
 src/APISetupFBS/tests/__pycache__/test_FBcredentialsetup.cpython-37-pytest-7.1.2.pyc
+src/APIUtil/tests/__pycache__/test_apidriver.cpython-37-pytest-7.1.2.pyc
+src/APIUtil/tests/__pycache__/__init__.cpython-37.pyc
+.gitignore
+src/APIUtil/mocks/__pycache__/__init__.cpython-37.pyc
+src/APIUtil/mocks/__pycache__/GoogleSheetObjs.cpython-37.pyc
