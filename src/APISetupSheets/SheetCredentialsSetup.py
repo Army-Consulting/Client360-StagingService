@@ -3,7 +3,6 @@ from google.oauth2 import service_account
 from googleapiclient.errors import HttpError
 from google.oauth2.service_account import Credentials
 from google.auth.exceptions import MutualTLSChannelError
-
 import json
 
 class SheetsCredentialConnectorService:
