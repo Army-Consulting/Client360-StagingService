@@ -16,3 +16,14 @@ src/LinkUtil/__pycache__/GoogleSheetLink.cpython-37.pyc
 src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-5.2.1.pyc
 src/APISetupSheets/tests/__pycache__/__init__.cpython-37.pyc
 src/APISetupSheets/tests/__pycache__/test_sheetcredentialssetup.cpython-37-pytest-7.1.2.pyc
+src/APISetupFBS/tests/__pycache__/__init__.cpython-37.pyc
+src/APISetupFBS/tests/__pycache__/test_FBcredentialsetup.cpython-37-pytest-7.1.2.pyc
+src/APIUtil/tests/__pycache__/test_apidriver.cpython-37-pytest-7.1.2.pyc
+src/APIUtil/tests/__pycache__/__init__.cpython-37.pyc
+.gitignore
+src/APIUtil/mocks/__pycache__/__init__.cpython-37.pyc
+src/APIUtil/mocks/__pycache__/GoogleSheetObjs.cpython-37.pyc
+src/DataTransformTools/tests/__pycache__/test_TransformatonUtils.cpython-37-pytest-7.1.2.pyc
+src/DataTransformTools/tests/__pycache__/__init__.cpython-37.pyc
+src/DataTransformTools/mocks/__pycache__/Constants.cpython-37.pyc
+src/APIUtil/tests/__pycache__/test_APISetup.cpython-37-pytest-7.1.2.pyc

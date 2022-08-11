@@ -2,15 +2,17 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 from firebase_admin.exceptions import FirebaseError
 import firebase_admin
-import json
 
 class FirebaseCredentialConnectorService:
     def __init__(self, configFile):
         self.configfile = configFile
     def credentialSetUp(self):
-        firebase_acct_info_file = open(self.configfile)
-        firebase_acct_info = json.load(firebase_acct_info_file)
-        fbcred = credentials.Certificate(self.configfile)
+        try:
+            fbcred = credentials.Certificate(self.configfile)
+        except IOError:
+            return IOError
+        except ValueError:
+            return ValueError
         return fbcred
 
 class FirebaseCredentialConnectorConsumer:
@@ -18,10 +20,15 @@ class FirebaseCredentialConnectorConsumer:
         self.credentialconnector = CredentialConnector
     def activate(self):
         credentials = self.credentialconnector.credentialSetUp()
-        try:
-            firebase_admin.initialize_app(credentials)
-            store = firestore.client()
-            return store
-        except FirebaseError as error:
-            return None
+        if(credentials == IOError):
+            raise IOError
+        elif(credentials == ValueError):
+            raise ValueError
+        else:
+            try:
+                firebase_admin.initialize_app(credentials)
+                store = firestore.client()
+                return store
+            except ValueError:
+                raise ValueError
 

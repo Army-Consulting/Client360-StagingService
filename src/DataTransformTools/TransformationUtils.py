@@ -28,7 +28,7 @@ def CaptureEmployeeTimeSheetData(timeSheetID, month, serviceproviders):
 def FillRecords(HourRow, HourNumber, CompName, DayObj):
     if(CompName in HourRow):
         currentDay, CompNamePtr, DescPtr = 1, 4, 5
-        for day in range(currentDay, 5):
+        for day in range(currentDay, 32):
             if(HourRow[CompNamePtr] == CompName and len(HourRow[DescPtr])):
                 #DayObj[str(day)].append({"Note": HourRow[DescPtr], "Config":{}})
                 DayObj.AddData(str(day), {"Note": HourRow[DescPtr], "Config":{}})
