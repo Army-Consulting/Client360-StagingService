@@ -1,3 +1,6 @@
+from collections import deque
+from collections import defaultdict
+
 TIMEKEEPINGPAYLOAD = [['12:00 AM', '9:00 AM', '7:00 AM', '', 'NS Training', 'Watched videos on MapReduce', '', 'NS Training', 'More videos on MapReduce', '', 'NS Training', 'More videos on Workflows', '', 'NS Training', 'More videos on Workflows', 'del'], ['1:00 AM', '10:00 AM', '8:00 AM', '', 'NS Training', 'Watched videos on MapReduce and did\nsome practice questions!', '', 'NS Training', 'More videos on MapReduce', '', 'NS Training', 'More videos on Workflows', '', 'NS Training', 'More videos on Workflows', 'del'], ['2:00 AM', '11:00 AM', '9:00 AM', '', 'SeaLevel', 'On Boarding for SeaLevel', '', '', '', '', '', '', '', '', '', 'del'], ['3:00 AM', '12:00 PM', '10:00 AM', '', 'SeaLevel', 'On Boarding for SeaLevel Pt. 2', '', '', '', '', '', '', '', '', '', 'del'], ['4:00 AM', '1:00 PM', '11:00 AM', '', 'NS Training', 'JavaScript Algorithm thinking', '', '', '', '', '', '', '', '', '', 'del']]
 
 FILLEDMONTHDICT = {'1': [{'Note': 'Watched videos on MapReduce', 'Config': {}},
@@ -78,3 +81,35 @@ FILLEDMONTHDICT31 = {'1': [{'Note': 'Watched videos on MapReduce', 'Config': {}}
  '30': [{'Note': 'Final Workshop', 'Config': {}},
   {'Note': 'Final Workshop', 'Config': {}}],
  '31': [{'Note': 'Closing the books for the quarter', 'Config': {}}]}
+
+ONEENTRY={'1': deque([{'Note': "testNote", 'Config': {}}]),
+ '2': deque([]),
+ '3': deque([]),
+ '4': deque([]),
+ '5': deque([]),
+ '6': deque([]),
+ '7': deque([]),
+ '8': deque([]),
+ '9': deque([]),
+ '10': deque([]),
+ '11': deque([]),
+ '12': deque([]),
+ '13': deque([]),
+ '14': deque([]),
+ '15': deque([]),
+ '16': deque([]),
+ '17': deque([]),
+ '18': deque([]),
+ '19': deque([]),
+ '20': deque([]),
+ '21': deque([]),
+ '22': deque([]),
+ '23': deque([]),
+ '24': deque([]),
+ '25': deque([]),
+ '26': deque([]),
+ '27': deque([]),
+ '28': deque([]),
+ '29': deque([]),
+ '30': deque([]),
+ '31': deque([])}
