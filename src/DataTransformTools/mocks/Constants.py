@@ -1,3 +1,6 @@
+from collections import deque
+from collections import defaultdict
+
 TIMEKEEPINGPAYLOAD = [['12:00 AM', '9:00 AM', '7:00 AM', '', 'NS Training', 'Watched videos on MapReduce', '', 'NS Training', 'More videos on MapReduce', '', 'NS Training', 'More videos on Workflows', '', 'NS Training', 'More videos on Workflows', 'del'], ['1:00 AM', '10:00 AM', '8:00 AM', '', 'NS Training', 'Watched videos on MapReduce and did\nsome practice questions!', '', 'NS Training', 'More videos on MapReduce', '', 'NS Training', 'More videos on Workflows', '', 'NS Training', 'More videos on Workflows', 'del'], ['2:00 AM', '11:00 AM', '9:00 AM', '', 'SeaLevel', 'On Boarding for SeaLevel', '', '', '', '', '', '', '', '', '', 'del'], ['3:00 AM', '12:00 PM', '10:00 AM', '', 'SeaLevel', 'On Boarding for SeaLevel Pt. 2', '', '', '', '', '', '', '', '', '', 'del'], ['4:00 AM', '1:00 PM', '11:00 AM', '', 'NS Training', 'JavaScript Algorithm thinking', '', '', '', '', '', '', '', '', '', 'del']]
 
 FILLEDMONTHDICT = {'1': [{'Note': 'Watched videos on MapReduce', 'Config': {}},
@@ -78,3 +81,37 @@ FILLEDMONTHDICT31 = {'1': [{'Note': 'Watched videos on MapReduce', 'Config': {}}
  '30': [{'Note': 'Final Workshop', 'Config': {}},
   {'Note': 'Final Workshop', 'Config': {}}],
  '31': [{'Note': 'Closing the books for the quarter', 'Config': {}}]}
+
+ONEENTRY={'1': deque([{'Note': "testNote", 'Config': {}}]),
+ '2': deque([]),
+ '3': deque([]),
+ '4': deque([]),
+ '5': deque([]),
+ '6': deque([]),
+ '7': deque([]),
+ '8': deque([]),
+ '9': deque([]),
+ '10': deque([]),
+ '11': deque([]),
+ '12': deque([]),
+ '13': deque([]),
+ '14': deque([]),
+ '15': deque([]),
+ '16': deque([]),
+ '17': deque([]),
+ '18': deque([]),
+ '19': deque([]),
+ '20': deque([]),
+ '21': deque([]),
+ '22': deque([]),
+ '23': deque([]),
+ '24': deque([]),
+ '25': deque([]),
+ '26': deque([]),
+ '27': deque([]),
+ '28': deque([]),
+ '29': deque([]),
+ '30': deque([]),
+ '31': deque([])}
+
+MERGEDOBJECTDICT = {'1': [{'Note': 'Watched videos on MapReduce', 'Config': {}}, {'Note': 'Watched videos on MapReduce and did\nsome practice questions!', 'Config': {}}, {'Note': 'JavaScript Algorithm thinking', 'Config': {}}, {'Note': 'UI Events Module Practice', 'Config': {}}, {'Note': 'UI Events Module Practice', 'Config': {}}, {'Note': 'SuiteScript Lifecycle practice and discussion', 'Config': {}}], '2': [{'Note': 'More videos on MapReduce', 'Config': {}}, {'Note': 'More videos on MapReduce', 'Config': {}}, {'Note': 'Backend Events Module Practice', 'Config': {}}, {'Note': 'Backend Events Module Practice', 'Config': {}}], '3': [{'Note': 'More videos on Workflows', 'Config': {}}, {'Note': 'More videos on Workflows', 'Config': {}}, {'Note': 'Events UI SuiteScript Practice Session', 'Config': {}}, {'Note': 'EVEN More Events UI SuiteScript practice', 'Config': {}}, {'Note': 'Backend AfterUpdate SuiteScript Tutorials', 'Config': {}}, {'Note': 'SuiteScript SMTPHTTPModule Introduction', 'Config': {}}], '4': [{'Note': 'More videos on Workflows', 'Config': {}}, {'Note': 'More videos on Workflows', 'Config': {}}], '5': [], '6': [], '7': [], '8': [{'Note': 'HTTPS Modules Continued', 'Config': {}}], '9': [], '10': [], '11': [], '12': [], '13': [], '14': [], '15': [], '16': [], '17': [], '18': [], '19': [], '20': [], '21': [], '22': [], '23': [], '24': [], '25': [], '26': [], '27': [], '28': [], '29': [], '30': [{'Note': 'Final Workshop', 'Config': {}}, {'Note': 'Final Workshop', 'Config': {}}, {'Note': 'Last meeting of the month!', 'Config': {}}], '31': [{'Note': 'Closing the books for the quarter', 'Config': {}}]} 

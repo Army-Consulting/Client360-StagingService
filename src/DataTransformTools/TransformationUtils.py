@@ -21,7 +21,7 @@ def PopulateMasterObject(timeSheetID, month, company, masterobj, serviceprovider
         FillRecords(Payload[i], i, company, masterobj)
         
 def CaptureEmployeeTimeSheetData(timeSheetID, month, serviceproviders):
-    TimeKeepingPayload = serviceproviders['GoogleSheets'].spreadsheets().values().get(spreadsheetId=timeSheetID, range=f"{month}!A6:P10").execute()
+    TimeKeepingPayload = serviceproviders['GoogleSheets'].spreadsheets().values().get(spreadsheetId=timeSheetID, range=f"{month}!A6:CS29").execute()
     return TimeKeepingPayload.get('values')
 
 ## Fill dictionary
