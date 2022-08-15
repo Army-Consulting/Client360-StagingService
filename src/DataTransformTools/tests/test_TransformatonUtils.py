@@ -1,4 +1,3 @@
-from pytest_mock import mocker
 from DataTransformTools.mocks import Constants
 from DataTransformTools.TransformationUtils import (PopulateMasterObject,
     CaptureEmployeeTimeSheetData, pushupdate)
@@ -9,6 +8,7 @@ from googleapiclient.errors import HttpError
 from datetime import date
 from DataTransformTools.TimestampTool import Timestamp
 from google.api_core.exceptions import RetryError
+from google.auth.exceptions import TransportError
 import pytest
 import os
 
@@ -57,4 +57,13 @@ def test_PushUpdateSetNoConnection(mocker):
         'NS Training', 
         ["SheetID1", "SheetID2"],
         {'FBStore': test_config.getFirebaseStore()})
-    
+        
+# testing CaptureEmployeeTimeSheetData Exceptions
+# When there is no internet connection
+def test_CaptureEmployeeTimeSheetData_Wrong_ID():
+    # Activate the credentials
+    with pytest.raises(TransportError) as e_info:
+        CaptureEmployeeTimeSheetData(
+            os.environ["test_TransformationUtils_clientsheets_link"],
+            "April", 
+            {'GoogleSheets': test_config.getSheetService()})
